@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="header">
+        <span class="watermark">Made with <img class="heart-icon" src="src/like.png" alt="heart"> by RayZ</span> 
+        <h1 class="heading">Simple To-Do</h1>
+    </div>
+    <div class="popup">
+        <form class="add-task-form">
+            <span><img class="close-form-icon" src="src/close_black.png" alt="close_btn"></span>
+            <label class="label" for="taskName">Task Name</label>
+            <input type="text" class="task-name-form" id="taskName" placeholder="Programming">
+            <label class="label" for="taskDesc">Task Description</label>
+            <textarea class="task-desc-form" id="taskDesc" cols="30" rows="10" placeholder="Code To-Do Application for portfolio"></textarea>
+            <div class="form-settings">
+                <span class="priority form-setting">
+                    <label for="">Priority</label>
+                    <span class="circles">
+                        <span class="choose-circle" id="nonImportant"></span>
+                        <span class="choose-circle" id="important"></span>
+                        <span class="choose-circle" id="veryImportant"></span>
+                    </span>
+                </span>
+                <span class="date form-setting">
+                    <label for="">Date</label>
+                    
+                </span>
+                <span class="repeatable form-setting">
+                    <label for="">Repeatable</label>
+                </span>
+            </div>
+            <button class="submit-button">Add Task</button>
+        </form>
+    </div>
+    <div class="container">
+        <button class="add-task-btn">Add Task</button>
+        <div class="task-container">
+            <div class="today-tasks">
+                <span class="date-sign">Tasks</span>
+                <div class="task clearfix important">
+                    <span class="task-name">Programming</span>
+                    <span class="task-buttons">
+                        <img class="task-btn" src="src/done.png" alt="done">
+                        <img class="task-btn" src="src/close.png" alt="close">
+                    </span>
+                </div>
+                <div class="task not-important clearfix">
+                    <span class="task-name">Programming</span>
+                    <span class="task-buttons">
+                        <img class="task-btn" src="src/done.png" alt="done">
+                        <img class="task-btn" src="src/close.png" alt="close">
+                    </span>
+                </div>
+            </div>
+            <div class="all-time-tasks">
+                <span class="date-sign">Completed</span>
+                <div class="task very-important clearfix">
+                    <span class="task-name">Programming</span>
+                    <span class="task-buttons">
+                        <img class="task-btn" src="src/done.png" alt="done">
+                        <img class="task-btn" src="src/close.png" alt="close">
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>

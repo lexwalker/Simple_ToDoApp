@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+* {
+    margin: 0;  
+    padding: 0;
+    font-family: monospace;
+}
+
+body {
+    background: antiquewhite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+button {
+    outline: none;
+}
+
+textarea {
+    resize: none;
+}
+
+.label {
+    display: block;
+    padding: 15px;
+    text-align: center;
+}
+
+.clearfix:after {
+        content: " ";
+        display: table;
+        clear: both;
+}
+
+/* Header */
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    background-color: white;
+    border-bottom: 1px solid grey;
+}
+
+.watermark {
+    display: inline-block;
+    position: absolute;
+    left: 10px;
+}
+
+.heart-icon {
+    width: 20px;
+    vertical-align: middle;
+}
+
+.heading {
+    display: inline-block;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 15px;
+}
+
+/* Popup */
+
+.popup {
+    display: none;
+    background: rgba(0, 0, 0, 0.295);
+    position: fixed;
+    top: 36px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.add-task-form {
+    width: 350px;
+    height: 400px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 100px;
+    left: 0;
+    margin: auto;
+    padding: 20px;
+    background: white;
+    border-radius: 15px;
+    border: 1px solid black;
+}
+
+.task-name-form, .task-desc-form {
+    outline: none;
+    display: block;
+    margin: 0 auto;
+    padding: 10px;
+    width: 300px;
+    border: 1px solid grey;
+}
+
+.task-name-form:focus, .task-desc-form:focus {
+    background: rgb(213, 235, 240);
+}
+
+.task-name-form {
+    height: 15px;
+    border-radius:  10px;
+}
+
+.close-form-icon {
+    float: right;
+    width: 18px;
+}
+
+.close-form-icon:hover {
+    cursor: pointer;
+}
+
+.form-settings {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.form-setting {
+    display: inline;
+    padding: 20px
+}
+
+.choose-circle {
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+
+.submit-button {
+    display: block;
+    padding: 10px 30px;
+    margin: 0 auto;
+    margin-top: 38px;
+    border: 1px solid grey;
+    background: rgb(116, 238, 126);
+    border-radius: 10px;
+    transition: 0.2s;
+}
+
+.submit-button:hover {
+    background: rgb(51, 219, 51);
+    cursor: pointer;
+}
+
+/* Main Content */
+
+.container {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+
+.add-task-btn {
+    padding: 15px 150px;
+    margin: 0 100px;
+    border-radius: 10px;
+    border: 1px solid grey;
+    background: #F1E663;
+    transition: 0.2s;
+}
+
+.add-task-btn:hover {
+    background: #6BF74B;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.task-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 25px;
+    border-top: 1px solid grey;
+}
+
+.date-sign {
+    display: block;
+    width: 1px;
+    margin: 0 auto;
+    margin-top: 5px;
+    color: grey;
+}
+
+.task {
+    width: 250px;
+    padding: 5px;
+    margin: 20px 10px;
+    border: 1px solid grey;
+    border-radius: 10px;
+}
+
+.task-name {
+    margin-top: 5px;
+    float: left;
+    vertical-align: middle;
+}
+
+.task-buttons {
+    float: right;
+}
+
+.task-btn {
+    width: 20px;
+    
+}
+
+ /* Change this  later */
+
+.very-important {
+    background-color: #e98c82;
+}
+
+.important {
+    background-color: #F4D03F;
+}
+
+.not-important {
+    background-color: #58D68D;
+}
+
+
+
